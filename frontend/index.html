@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود / ثبت‌نام | کتاب‌خانه من</title>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="auth-page">
+        <div class="auth-box">
+            <div class="auth-logo">
+                <i class="fa-solid fa-book-open"></i>
+                <h1>کتاب‌خانه من</h1>
+            </div>
+            
+            <!-- تب‌های سوئیچ بین لاگین و ثبت‌نام -->
+            <div class="auth-tabs">
+                <button id="loginTab" class="active">ورود</button>
+                <button id="registerTab">ثبت‌نام</button>
+            </div>
+
+            <!-- فرم لاگین -->
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>نام کاربری</label>
+                    <input type="text" id="loginUsername" placeholder="نام کاربری" value="admin">
+                </div>
+                <div class="form-group">
+                    <label>رمز عبور</label>
+                    <input type="password" id="loginPassword" placeholder="رمز عبور" value="admin">
+                </div>
+                <button type="submit"><i class="fa-solid fa-right-to-bracket"></i> ورود</button>
+                <div id="loginMessage" class="auth-message"></div>
+            </form>
+
+            <!-- فرم ثبت‌نام -->
+            <form id="registerForm" style="display:none;">
+                <div class="form-group">
+                    <label>نام کاربری</label>
+                    <input type="text" id="regUsername" placeholder="نام کاربری (حداقل ۳ کاراکتر)">
+                </div>
+                <div class="form-group">
+                    <label>رمز عبور</label>
+                    <input type="password" id="regPassword" placeholder="رمز عبور (حداقل ۴ کاراکتر)">
+                </div>
+                <div class="form-group">
+                    <label>ایمیل</label>
+                    <input type="email" id="regEmail" placeholder="ایمیل (اختیاری)">
+                </div>
+                <div class="form-group">
+                    <label>نام نمایشی</label>
+                    <input type="text" id="regDisplayName" placeholder="نامی که نمایش داده می‌شود (اختیاری)">
+                </div>
+                <button type="submit"><i class="fa-solid fa-user-plus"></i> ثبت‌نام</button>
+                <div id="registerMessage" class="auth-message"></div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

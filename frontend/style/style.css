@@ -1,0 +1,22 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Vazirmatn', sans-serif; }
+body { background: linear-gradient(145deg, #F1F5F9, #E2E8F0); min-height: 100vh; display: flex; justify-content: center; align-items: center; }
+
+.auth-box { background: white; padding: 40px; border-radius: 24px; width: 400px; max-width: 90%; box-shadow: 0 20px 60px rgba(0,0,0,0.08); text-align: center; }
+.auth-logo i { font-size: 3rem; color: #3B82F6; }
+.auth-logo h1 { font-size: 1.5rem; margin-top: 10px; color: #1E293B; }
+
+.auth-tabs { display: flex; gap: 10px; margin: 20px 0; }
+.auth-tabs button { flex: 1; padding: 10px; border: 2px solid #E2E8F0; background: transparent; border-radius: 12px; cursor: pointer; font-weight: bold; color: #64748B; transition: 0.3s; }
+.auth-tabs button.active { background: #3B82F6; color: white; border-color: #3B82F6; }
+
+.form-group { text-align: right; margin-bottom: 15px; }
+.form-group label { font-size: 0.85rem; color: #64748B; display: block; margin-bottom: 5px; }
+.form-group input { width: 100%; padding: 12px 15px; border: 2px solid #E2E8F0; border-radius: 12px; outline: none; transition: 0.3s; font-size: 0.9rem; }
+.form-group input:focus { border-color: #3B82F6; box-shadow: 0 0 0 4px #DBEAFE; }
+
+button[type="submit"] { width: 100%; padding: 12px; background: #3B82F6; color: white; border: none; border-radius: 12px; font-size: 1rem; cursor: pointer; transition: 0.2s; margin-top: 10px; display: flex; justify-content: center; align-items: center; gap: 8px; }
+button[type="submit"]:hover { background: #2563EB; }
+
+.auth-message { margin-top: 10px; font-size: 0.9rem; padding: 8px; border-radius: 8px; display: none; }
+.auth-message.success { display: block; background: #DCFCE7; color: #16A34A; }
+.auth-message.error { display: block; background: #FEE2E2; color: #EF4444; }
